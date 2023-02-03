@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="top">
+            <div id="user-info">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="profile">
+
+                <div id="user-status">
+                    <strong>Michelli Britto</strong>
+                    <div class="status">
+                        Online
+                    </div>
+                </div>
+            </div>
+            <div id="close-chat">
+                <i class="ph-x"></i>
+            </div>
+        </div>
+        <div id="messages">
+            <div id="last-seen">
+                today, 11:30
+            </div>
+
+            <div class="messages">
+                <div class="message">
+                    <div class="top">Michelli - 11:30</div>
+                    <div class="body">
+                        I have an awesome project to share with you today
+                    </div>
+                </div>
+                <div class="message you">
+                    <div class="top">you - 11:32</div>
+                    <div class="body">
+                        ohh so fine... tell me more...❤️💖
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="top">Michelli - 11:32</div>
+                    <div class="body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Cupiditate</strong>.
+                    </div>
+                </div>
+                <div class="message you">
+                    <div class="top">you - 11:34</div>
+                    <div class="body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="top">Michelli - 11:30</div>
+                    <div class="body">
+                        I have an awesome project to share with you today
+                    </div>
+                </div>
+                <div class="message you">
+                    <div class="top">you - 11:32</div>
+                    <div class="body">
+                        ohh so fine... tell me more...❤️💖
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="top">Michelli - 11:32</div>
+                    <div class="body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Cupiditate</strong>.
+                    </div>
+                </div>
+                <div class="message you">
+                    <div class="top">you - 11:34</div>
+                    <div class="body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form id="bottom">
+            <input type="text" placeholder="Type your message...">
+            <button>
+                <i class="ph-paper-plane-right-fill"></i>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        const messages = document.querySelector('.messages');
+        messages.lastElementChild.scrollIntoView({ behavior: "smooth" });
+    </script>
+</body>
+
+</html>
